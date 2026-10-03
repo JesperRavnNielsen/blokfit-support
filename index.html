@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BlokFit Support</title>
+  <meta name="description" content="Support for the BlokFit interval timer app." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500;9..40,700&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #131313;
+      --text: #e5e2e1;
+      --muted: #c1c6d5;
+      --primary: #a9c7ff;
+      --accent: #4c97ff;
+      --amber: #ffbd60;
+      --card: #201f1f;
+      --line: #414753;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "DM Sans", system-ui, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(900px 500px at 10% -10%, rgba(76, 151, 255, 0.22), transparent 55%),
+        radial-gradient(700px 420px at 100% 0%, rgba(255, 189, 96, 0.12), transparent 50%),
+        var(--bg);
+    }
+    main {
+      max-width: 40rem;
+      margin: 0 auto;
+      padding: 18vh 1.5rem 4rem;
+    }
+    .brand {
+      font-family: Syne, sans-serif;
+      font-weight: 800;
+      font-size: clamp(2.8rem, 10vw, 4.2rem);
+      letter-spacing: -0.04em;
+      line-height: 0.95;
+      color: var(--primary);
+      margin: 0 0 1.25rem;
+    }
+    h1 {
+      font-family: Syne, sans-serif;
+      font-size: 1.35rem;
+      font-weight: 700;
+      margin: 0 0 0.75rem;
+      letter-spacing: -0.02em;
+    }
+    p {
+      margin: 0 0 1rem;
+      color: var(--muted);
+      font-size: 1.05rem;
+      line-height: 1.55;
+      max-width: 32rem;
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 1.75rem;
+    }
+    a.button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.85rem 1.2rem;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.98rem;
+      background: var(--accent);
+      color: #002f61;
+      transition: transform 160ms ease, filter 160ms ease;
+    }
+    a.button:hover { filter: brightness(1.08); transform: translateY(-1px); }
+    a.ghost {
+      background: transparent;
+      color: var(--primary);
+      border: 1px solid var(--line);
+    }
+    .note {
+      margin-top: 2.5rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--line);
+      font-size: 0.92rem;
+    }
+    .note a { color: var(--amber); }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="brand">BlokFit</p>
+    <h1>Support</h1>
+    <p>
+      Need help with routines, Apple Watch sync, purchases, or something else?
+      Email us and we’ll get back to you.
+    </p>
+    <div class="actions">
+      <a class="button" href="mailto:blokfitapp@gmail.com">Email blokfitapp@gmail.com</a>
+      <a class="button ghost" href="privacy.html">Privacy Policy</a>
+    </div>
+    <p class="note">
+      BlokFit is an interval timer for iPhone and Apple Watch.
+      Source: <a href="https://github.com/JesperRavnNielsen/BlokFit">github.com/JesperRavnNielsen/BlokFit</a>
+    </p>
+  </main>
+</body>
+</html>
